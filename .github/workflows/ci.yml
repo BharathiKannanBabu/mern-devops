@@ -34,6 +34,7 @@ jobs:
              echo "MongoDB started"
 
       - name: Seed mongoDB
+        working-directory: ./backend
         run: |
           npm install
           node seedTasksData.js
